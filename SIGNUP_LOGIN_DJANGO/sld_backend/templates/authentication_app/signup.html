@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authentication App: SignUp</title>
+</head>
+<body>
+  <h2>SignUp page</h2>
+  <form action="/signup" method="post">
+    {% csrf_token %}
+      <div class="form-group">
+        <label for="name">Username</label><br/>
+        <input type="text" name="username" id="username" placeholder="Enter username" required>
+      </div><br/>
+      <div class="form-group">
+        <label for="name">First Name</label><br/>
+        <input type="text" name="fname" id="fname" placeholder="Enter firstname" required>
+      </div><br/>
+      <div class="form-group">
+        <label for="name">Last Name</label><br/>
+        <input type="text" name="lname" id="lname" placeholder="Enter lastname" required>
+      </div><br/>
+      <div class="form-group">
+        <label for="email">Email</label><br/>
+        <input type="email" name="email" id="email" placeholder="Enter Email" required>
+      </div><br/>
+      <div class="form-group">
+        <label for="Password">Password</label><br/>
+        <input type="password" name="pwd1" id="pwd1" placeholder="Enter Password" required>
+      </div><br/>
+      <div class="form-group">
+        <label for="Password">Confrim Password</label><br/>
+        <input type="password" name="pwd2" id="pwd2" placeholder="Enter Password" required>
+      </div><br/>
+      <div class="form-group">
+        <button type="submit">Sign up</button>
+      </div>
+
+  </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authentication App: SignIn</title>
+</head>
+<body>
+  <h2>signin page</h2>
+  <form action="/signin" method="post">
+    {% csrf_token %}
+      <div class="form-group">
+        <label for="name">Username</label><br/>
+        <input type="text" name="username" id="username" placeholder="Enter username" required>
+      </div><br/>
+      <div class="form-group">
+        <label for="Password">Password</label><br/>
+        <input type="password" name="pwd1" id="pwd1" placeholder="Enter Password" required>
+      </div><br/>
+      <div class="form-group">
+        <button type="submit">Sign In</button>
+      </div>
+  </form>
+</body>
+</html>
