@@ -16,8 +16,7 @@ nav{
   justify-content: space-between;
 }
 nav .explorer__logo{
-  padding: 1rem 2rem;
-  border: 2px solid red;
+  padding: 2rem;
 }
 nav .explorer__logo a{
   font-size: 1.8rem;
@@ -29,12 +28,11 @@ nav .explorer__logo a{
 nav ul{
   display: flex;
   list-style: none;
-  border: 2px solid red;
 }
 nav ul li{
   color: #fff;
   font-size: 1rem;
-  padding: 1rem 2rem;
+  padding: 2rem;
   font-weight: bold;
 }
 .hero__content-box{
@@ -43,11 +41,9 @@ nav ul li{
   align-items: center;
 }
 .hero__content{
-  border: 2px solid blue;
-  width: 50%;
+  width: 45%;
   height: 70vh;
   padding: 7% 3%;
-  margin-top: 1rem;
 }
 .hero__content h1{
   font-size: 2rem;
@@ -58,10 +54,10 @@ nav ul li{
   margin: 2rem 0;
 }
 .hero__content p{
-  border: #FF6347 2px solid;
   margin-bottom: 2rem;
   font-size: 20px;
   padding: 0;
+  line-height: 1.8;
 }
 .hero__content .hero__btn{
   padding: 0.5rem;
@@ -77,20 +73,14 @@ nav ul li{
 .hero__container{
   /* background: url('/img/exploreBg.png') no-repeat center center/cover; */
   background: linear-gradient(0deg, rgba(255, 99, 71, 0.35), rgba(255, 99, 71, 0.35)), url('/img/exploreBg.png');
-  height: 90vh;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 /* ===========cards section================ */
 .card-container{
-  border: 2px solid red;
   padding: 5rem 0;
 }
 
@@ -129,8 +119,6 @@ nav ul li{
 /* ===========footer section ============= */
 footer{
   background: #FF6347;
-  /* padding-top: 1rem; */
-  /* padding: 1rem 0; */
 }
 .sub-footer1-container{
   background: #FF6347;
@@ -145,18 +133,49 @@ footer{
   font-size: 30px;
 }
 .sub-footer2-container{
-  /* border: solid white 2px; */
+  border: solid white 2px;
   background: #000;
 }
 .sub-footer2-content{
   display: flex;
   justify-content: space-between;
-  /* padding: 1rem 0; */
-  /* margin-top: 1rem; */
 }
 
 .sub-footer2-content .sub-footer-icon, p{
   color: #fff;
-  padding: 1rem;
+  /* padding: 1rem; */
   cursor: pointer;
+}
+
+@media screen and (max-width:900px){
+  nav{
+    display: none;
+  }
+  .card-row{
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  .card-row .card-boxes{
+    width: 100%;
+    margin: 10px 0;
+  }
+  .hero__content-box{
+    flex-direction: column-reverse;
+  }
+  .hero__content{
+    width: 100%;
+    padding: 15% 8%;
+  }
+  .card-row{
+    margin: 6px 0;
+  }
+  .hero__content h1{
+    font-size: 1.5rem;
+  }
+  .sub-footer2-content{
+    flex-direction: column;
+  }
+  .card-container{
+    padding: 3rem 0;
+  }
 }
