@@ -1,13 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+  font-family: 'Inter', sans-serif;
+}
 .row{
-  max-width: 85%;
+  max-width: 90%;
   margin: 0 auto;
 }
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+nav .explorer__logo{
+  padding: 1rem 2rem;
+  border: 2px solid red;
+}
+nav .explorer__logo a{
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  color: #fff;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  border: 2px solid red;
+}
+nav ul li{
+  color: #fff;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  font-weight: bold;
+}
+.hero__content-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero__content{
+  border: 2px solid blue;
+  width: 50%;
+  height: 70vh;
+  padding: 7% 3%;
+  margin-top: 1rem;
+}
+.hero__content h1{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+.hero__content h1,p{
+  margin: 2rem 0;
+}
+.hero__content p{
+  border: #FF6347 2px solid;
+  margin-bottom: 2rem;
+  font-size: 20px;
+  padding: 0;
+}
+.hero__content .hero__btn{
+  padding: 0.5rem;
+  background: #FF6347;
+  border-radius: 30px;
+  border-radius: 15px;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* ============Hero section ============= */
+.hero__container{
+  /* background: url('/img/exploreBg.png') no-repeat center center/cover; */
+  background: linear-gradient(0deg, rgba(255, 99, 71, 0.35), rgba(255, 99, 71, 0.35)), url('/img/exploreBg.png');
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+/* ===========cards section================ */
 .card-container{
   border: 2px solid red;
   padding: 5rem 0;
@@ -44,28 +125,38 @@
 .btn-margin{
   margin-top: 1rem;
 }
+
+/* ===========footer section ============= */
 footer{
   background: #FF6347;
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   /* padding: 1rem 0; */
 }
-.sub-footer{
-  /* border: solid white 2px; */
+.sub-footer1-container{
   background: #FF6347;
+}
+.sub-footer1-content{
   display: flex;
   justify-content: space-between;
-  padding: 1rem 10% 0.3rem 10%;
+  padding: 1rem 0
 }
-.sub-footer h2{
+.sub-footer1-container h2{
   color: #fff;
   font-size: 30px;
 }
-.sub-footer2{
+.sub-footer2-container{
   /* border: solid white 2px; */
   background: #000;
+}
+.sub-footer2-content{
   display: flex;
   justify-content: space-between;
-  padding: 2% 10%;
+  /* padding: 1rem 0; */
+  /* margin-top: 1rem; */
+}
+
+.sub-footer2-content .sub-footer-icon, p{
   color: #fff;
-  margin-top: 1rem;
+  padding: 1rem;
+  cursor: pointer;
 }
