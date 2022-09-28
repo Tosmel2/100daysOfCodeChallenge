@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -14,6 +15,8 @@ body{
 nav{
   display: flex;
   justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 nav .explorer__logo{
   padding: 2rem;
@@ -32,8 +35,9 @@ nav ul{
 nav ul li{
   color: #fff;
   font-size: 1rem;
-  padding: 2rem;
+  padding: 2rem 4rem;
   font-weight: bold;
+  /* border: 2px solid red; */
 }
 .hero__content-box{
   display: flex;
@@ -58,6 +62,7 @@ nav ul li{
   font-size: 20px;
   padding: 0;
   line-height: 1.8;
+  color: #fff;
 }
 .hero__content .hero__btn{
   padding: 0.5rem;
@@ -93,7 +98,6 @@ nav ul li{
 .card-row .card-boxes{
   color: #fff;
   width: 32%;
-  /* margin: 10px; */
   padding: 2rem;
   background: #FF6347;
   box-shadow: 7px 11px 20px -10px rgba(0, 0, 0, 0.33);
@@ -117,9 +121,9 @@ nav ul li{
 }
 
 /* ===========footer section ============= */
-footer{
+/* footer{
   background: #FF6347;
-}
+} */
 .sub-footer1-container{
   background: #FF6347;
 }
@@ -133,18 +137,112 @@ footer{
   font-size: 30px;
 }
 .sub-footer2-container{
-  border: solid white 2px;
   background: #000;
+  padding: 0px 60px;
 }
 .sub-footer2-content{
   display: flex;
   justify-content: space-between;
 }
 
-.sub-footer2-content .sub-footer-icon, p{
+.sub-footer2-content p{
   color: #fff;
-  /* padding: 1rem; */
+}
+.sub-footer2-content .sub-footer-icon{
+  margin-right: 30px;
+}
+.sub-footer2-content .sub-footer-icon i{
+  color: #fff;
+  padding: 25px 2px;
+  font-size: 20px;
   cursor: pointer;
+}
+
+/* ============hamburger menu ============= */
+/* .backdrop {
+  background: rgba(0, 0, 0, 0.05);
+  top: 0;
+  left: 0;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+} */
+
+.nav__mobile {
+  /* display: none !important; */
+  background: #ff6347;
+  box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.05);
+  padding: 10px 20px;
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap !important; */
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__mobileBrand{
+  border: green 2px solid;
+}
+.mobile__logo a{
+  color: #fff;
+  border: 2px solid #eee;
+  font-size: 25px;
+  padding: 5px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav__Mobilelinks {
+  display: none;
+  z-index: 2 !important;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 200px;
+  background: #ff6347;
+  box-shadow: -6px -20px 5px 1px rgb(0 0 0 / 5%);
+}
+/* .nav__Mobilelinks ul{
+  padding: 20px;
+} */
+.nav__Mobilelinks ul li{
+  padding: 20px 30px;
+  list-style: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+#barbox {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.bar {
+  /* border: #eee 2px solid; */
+  height: 3px;
+  width: 100%;
+  margin: 6px 0;
+  background-color: #fff;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.change #bar1 {
+  transform: translate(0, 9px) rotate(-45deg);
+}
+.change #bar2 {opacity: 0;}
+
+.change #bar3 {
+  transform: translate(0, -9px) rotate(45deg);
+}
+.change {
+  display: block;
+}
+
+.show {
+  display: block;
 }
 
 @media screen and (max-width:900px){
@@ -166,16 +264,50 @@ footer{
     width: 100%;
     padding: 15% 8%;
   }
-  .card-row{
-    margin: 6px 0;
-  }
   .hero__content h1{
     font-size: 1.5rem;
+  }
+  .card-row{
+    margin: 10px 0;
+  }
+  .card-container{
+    padding: 3rem 0;
   }
   .sub-footer2-content{
     flex-direction: column;
   }
-  .card-container{
-    padding: 3rem 0;
+  .sub-footer2-container{
+    padding: 0 20px;
+  }
+  .sub-footer2-content p{
+    text-align: center;
+  }
+  .sub-footer2-content .sub-footer-icon{
+    margin-top: 0;
+    text-align: center;
+  }
+  .sub-footer2-content .sub-footer-icon i{
+    padding: 5px 5px 10px 5px;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width:680px){
+  .hero__content h1{
+    font-size: 1.3rem;
+  }
+  .hero__content p{
+    margin-bottom: 2rem;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #fff;
+  }
+  .sub-footer1-container h2{
+    color: #fff;
+    font-size: 25px;
+  }
+  .started-btn{
+    padding: 8px 15px;
+    font-size: 15px;
   }
 }
