@@ -16,3 +16,4 @@ menu.addEventListener("click", function () {
 backdrop.addEventListener('click', function () {
     controller();
 })
+controller();
