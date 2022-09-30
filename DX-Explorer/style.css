@@ -37,7 +37,6 @@ nav ul li{
   font-size: 1rem;
   padding: 2rem 4rem;
   font-weight: bold;
-  /* border: 2px solid red; */
 }
 .hero__content-box{
   display: flex;
@@ -121,9 +120,6 @@ nav ul li{
 }
 
 /* ===========footer section ============= */
-/* footer{
-  background: #FF6347;
-} */
 .sub-footer1-container{
   background: #FF6347;
 }
@@ -159,7 +155,7 @@ nav ul li{
 }
 
 /* ============hamburger menu ============= */
-/* .backdrop {
+.backdrop {
   background: rgba(0, 0, 0, 0.05);
   top: 0;
   left: 0;
@@ -168,25 +164,16 @@ nav ul li{
   width: 100%;
   height: 100%;
   z-index: 2;
-} */
+}
 
 .nav__mobile {
-  /* display: none !important; */
-  background: #ff6347;
-  box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.05);
-  padding: 10px 20px;
-  display: flex;
-  /* flex-direction: row; */
-  /* flex-wrap: wrap !important; */
-  justify-content: space-between;
-  align-items: center;
+  display: none;
 }
 .nav__mobileBrand{
-  border: green 2px solid;
+  display: none;
 }
 .mobile__logo a{
   color: #fff;
-  border: 2px solid #eee;
   font-size: 25px;
   padding: 5px;
   text-decoration: none;
@@ -198,20 +185,20 @@ nav ul li{
   z-index: 2 !important;
   position: absolute;
   left: 0;
-  top: 0;
   width: 100%;
   height: 200px;
-  /* background: #ff6347; */
-  box-shadow: -6px -20px 5px 1px rgb(0 0 0 / 5%);
+  background: #ff6347;
+  /* box-shadow: -6px -20px 5px 1px rgb(0 0 0 / 5%); */
 }
-/* .nav__Mobilelinks ul{
-  padding: 20px;
-} */
+
 .nav__Mobilelinks ul li{
   padding: 20px 30px;
   list-style: none;
   color: #fff;
   font-weight: bold;
+}
+.nav__Mobilelinks ul li:hover{
+  background: #eb735e;
 }
 
 #barbox {
@@ -220,7 +207,7 @@ nav ul li{
   cursor: pointer;
 }
 .bar {
-  /* border: #eee 2px solid; */
+  cursor: pointer;
   height: 3px;
   width: 100%;
   margin: 6px 0;
@@ -234,9 +221,6 @@ nav ul li{
 }
 .change #bar2 {opacity: 0;}
 
-/* .change #bar3 {
-  transform: translate(0, -9px) rotate(45deg);
-} */
 .change #bar3 {
     transform: translateY(-9px) rotate(45deg);
 }
@@ -292,6 +276,19 @@ nav ul li{
   .sub-footer2-content .sub-footer-icon i{
     padding: 5px 5px 10px 5px;
     color: #fff;
+  }
+  .nav__mobile {
+    background: #ff6347;
+    box-shadow: 10px 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; */
+    width: 100%;
+  }
+  .nav__mobileBrand{
+    display: flex;
   }
 }
 

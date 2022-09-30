@@ -2,18 +2,20 @@
 
 const backdrop = document.querySelector(".backdrop");
 const menu = document.getElementById("barbox");
+const view =document.querySelector(".nav__Mobilelinks");
 
 function controller() {
-    document.querySelector(".nav__Mobilelinks").classList.toggle("show");
+    view.classList.toggle("show");
     backdrop.classList.toggle("show");
     menu.classList.toggle("change")
 }
 
-menu.addEventListener("click", function () {
+menu.addEventListener("click", function (e) {
+    e.preventDefault()
     controller();
 })
 
-backdrop.addEventListener('click', function () {
+backdrop.addEventListener('click', function (e) {
+    e.preventDefault()
     controller();
 })
-controller();
