@@ -39,7 +39,7 @@ create a file inside the pages folder and it work fine without react router
 http://localhost:3000/profile
 
 
-## Dynamic Route in nextjs
+## Dynamic Route in nextjs..
 
 create a folder(product) inside of the pages and create the routing Files; for example
 http://localhost:3000/product/sweater
